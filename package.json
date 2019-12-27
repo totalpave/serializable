@@ -1,0 +1,45 @@
+{
+  "name": "@totalpave/serializable",
+  "version": "1.0.0-dev",
+  "description": "Serializable abstraction",
+  "main": "lib/api.js",
+  "types": "lib/api.d.ts",
+  "scripts": {
+    "lint": "node --max_old_space_size=6144 ./node_modules/eslint/bin/eslint.js --ext .ts '?(src|spec)/**/*.ts' --cache",
+    "build": "npm run lint && tsc",
+    "test": "npm run-script lint && nyc --reporter=lcov --reporter=text ts-node ./spec/support/jasmine.ts",
+    "docs": "typedoc --options typedoc.json",
+    "prepublishOnly": "npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totalpave/serializable.git"
+  },
+  "author": "norman.breau@totalpave.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/totalpave/serializable/issues"
+  },
+  "homepage": "https://github.com/totalpave/serializable#readme",
+  "devDependencies": {
+    "@totalpave/eslint-plugin": "2.3.2",
+    "@types/jasmine": "3.5.0",
+    "@typescript-eslint/eslint-plugin": "2.13.0",
+    "@typescript-eslint/parser": "2.13.0",
+    "eslint": "6.8.0",
+    "jasmine": "3.5.0",
+    "jasmine-spec-reporter": "4.2.1",
+    "nyc": "15.0.0",
+    "rollup": "1.27.14",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-peer-deps-external": "2.2.0",
+    "rollup-plugin-progress": "1.1.1",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.4"
+  },
+  "dependencies": {
+    "@types/node": "12.12.22"
+  }
+}
