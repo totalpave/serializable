@@ -1,7 +1,7 @@
 {
-  "name": "@totalpave/serializable",
+  "name": "@totalpave/serialize",
   "version": "1.0.0",
-  "description": "Serializable abstraction",
+  "description": "serialize abstraction",
   "main": "lib/api.js",
   "types": "lib/api.d.ts",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/totalpave/serializable.git"
+    "url": "git+https://github.com/totalpave/serialize.git"
   },
   "author": "norman.breau@totalpave.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/totalpave/serializable/issues"
+    "url": "https://github.com/totalpave/serialize/issues"
   },
-  "homepage": "https://github.com/totalpave/serializable#readme",
+  "homepage": "https://github.com/totalpave/serialize#readme",
   "devDependencies": {
     "@totalpave/eslint-plugin": "2.3.2",
     "@types/jasmine": "3.5.0",
