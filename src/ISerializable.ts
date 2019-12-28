@@ -1,4 +1,4 @@
 
-export interface ISerializable {
-    serialize(): Promise<string>;
+export interface ISerializable<T = string> {
+    serialize(): Promise<T>;
 }
